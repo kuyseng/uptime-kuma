@@ -1,7 +1,8 @@
 {
     "image": "mcr.microsoft.com/devcontainers/javascript-node:dev-18-bookworm",
     "features": {
-        "ghcr.io/devcontainers/features/github-cli:1": {}
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
     },
     "updateContentCommand": "npm ci",
     "postCreateCommand": "",
@@ -13,10 +14,11 @@
     "customizations": {
         "vscode": {
             "extensions": [
-				"streetsidesoftware.code-spell-checker",
-				"dbaeumer.vscode-eslint",
-				"GitHub.copilot-chat"
-			]
+                "streetsidesoftware.code-spell-checker",
+                "dbaeumer.vscode-eslint",
+                "GitHub.copilot-chat",
+                "Vue.volar"
+            ]
         }
     },
     "forwardPorts": [3000, 3001]
