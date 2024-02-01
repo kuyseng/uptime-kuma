@@ -5,10 +5,10 @@ version: '3.3'
 
 services:
   uptime-kuma:
-    image: louislam/uptime-kuma:1
-    container_name: uptime-kuma
+    image: itsecuritynbc/uptime-kuma:stable
+    container_name: uptime-kuma-stable
     volumes:
       - ./uptime-kuma-data:/app/data
     ports:
-      - 3001:3001  # <Host Port>:<Container Port>
+      - 3001:3001
     restart: always
